@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T00:00:00+09:00",
+  "updatedAt": "2026-10-19T00:00:00+09:00",
   "items": [
     {
       "id": "book-4839935521",
@@ -17,7 +17,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839935521.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4309721869",
@@ -34,7 +35,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4309721869.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839933324",
@@ -50,7 +52,8 @@
       "placements": [
         "booksPage",
         "tsumeTab"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839933324.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4861370329",
@@ -66,7 +69,8 @@
       "placements": [
         "booksPage",
         "tsumeTab"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4861370329.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839933006",
@@ -83,7 +87,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839933006.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839965153",
@@ -100,7 +105,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839965153.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839957274",
@@ -117,7 +123,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839957274.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839956685",
@@ -134,7 +141,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839956685.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-481970365X",
@@ -152,7 +160,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/481970365X.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839968802",
@@ -169,7 +178,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839968802.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839982635",
@@ -186,7 +196,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839982635.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839966966",
@@ -203,7 +214,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839966966.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839966508",
@@ -220,7 +232,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839966508.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4309731333",
@@ -238,7 +251,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4309731333.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839981272",
@@ -255,7 +269,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839981272.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839985030",
@@ -272,7 +287,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839985030.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839978069",
@@ -289,7 +305,8 @@
       "placements": [
         "booksPage",
         "strategy"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839978069.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4047102768",
@@ -302,7 +319,8 @@
       "rakutenItemUrl": "https://books.rakuten.co.jp/rb/6991223/?variantId=6991223",
       "placements": [
         "booksPage"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4047102768.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4167905833",
@@ -315,7 +333,8 @@
       "rakutenItemUrl": "https://books.rakuten.co.jp/rk/c9687d958e3037808fd8f9e0b40fdc9a/?variantId=c9687d958e3037808fd8f9e0b40fdc9a",
       "placements": [
         "booksPage"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4167905833.09.LZZZZZZZ.jpg"
     },
     {
       "id": "book-4839983887",
@@ -328,7 +347,8 @@
       "rakutenItemUrl": "https://books.rakuten.co.jp/rb/17771396/?variantId=17771396",
       "placements": [
         "booksPage"
-      ]
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839983887.09.LZZZZZZZ.jpg"
     }
   ],
   "features": []
