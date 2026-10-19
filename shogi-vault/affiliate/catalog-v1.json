@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T00:00:00+09:00",
+  "updatedAt": "2026-10-20T00:00:00+09:00",
   "items": [
     {
       "id": "book-4839935521",
@@ -349,7 +349,66 @@
         "booksPage"
       ],
       "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839983887.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4262101533",
+      "kind": "book",
+      "category": "tsumeshogi",
+      "title": "どんどん強くなる こども詰め将棋 1手詰め",
+      "author": "中村太地(監修)",
+      "publisher": "池田書店",
+      "amazonAsin": "4262101533",
+      "placements": [
+        "booksPage",
+        "tsumeTab"
+      ],
+      "tsumeMovesMin": 1,
+      "tsumeMovesMax": 1,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4262101533.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-426210155X",
+      "kind": "book",
+      "category": "tsumeshogi",
+      "title": "どんどん強くなる こども詰め将棋 5手詰め",
+      "author": "中村太地(監修)",
+      "publisher": "池田書店",
+      "amazonAsin": "426210155X",
+      "placements": [
+        "booksPage",
+        "tsumeTab"
+      ],
+      "tsumeMovesMin": 5,
+      "tsumeMovesMax": 5,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/426210155X.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4262101584",
+      "kind": "book",
+      "category": "playerBook",
+      "title": "どんどん強くなる こども将棋 勝てる手筋がわかる本",
+      "author": "中村太地(監修)",
+      "publisher": "池田書店",
+      "amazonAsin": "4262101584",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4262101584.09.LZZZZZZZ.jpg"
     }
   ],
-  "features": []
+  "features": [
+    {
+      "id": "feature-ono-hanae-2026",
+      "title": "注目の女流棋士 小野花依",
+      "subtitle": "2026年9月にデビューした小野花依女流(VTuber「なえ」)。師匠・中村太地八段が監修した本で、一緒に将棋を学ぼう",
+      "itemIds": [
+        "book-4262101533",
+        "book-426210155X",
+        "book-4262101584"
+      ],
+      "startAt": "2026-10-20T00:00:00+09:00",
+      "endAt": "2026-12-31T23:59:59+09:00",
+      "priority": 5
+    }
+  ]
 }
