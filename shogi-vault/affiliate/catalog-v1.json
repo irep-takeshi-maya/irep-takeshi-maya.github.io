@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-19T00:00:00+09:00",
+  "items": [
+    {
+      "id": "book-4839935521",
+      "kind": "book",
+      "category": "joseki",
+      "title": "羽生の頭脳(1) 四間飛車破り",
+      "author": "羽生善治",
+      "publisher": "将棋連盟文庫(マイナビ)",
+      "amazonAsin": "4839935521",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/6480461/?variantId=6480461",
+      "relatedStrategies": [
+        "shikenbisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839935521.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4309721869",
+      "kind": "book",
+      "category": "joseki",
+      "title": "四間飛車を指しこなす本(1)",
+      "author": "藤井猛",
+      "publisher": "河出書房新社(最強将棋塾)",
+      "amazonAsin": "4309721869",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/1142416/?variantId=1142416",
+      "relatedStrategies": [
+        "shikenbisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4309721869.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839933324",
+      "kind": "book",
+      "category": "tsumeshogi",
+      "title": "1手詰ハンドブック",
+      "author": "浦野真彦",
+      "publisher": "マイナビ",
+      "amazonAsin": "4839933324",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/6251753/?variantId=6251753",
+      "tsumeMovesMin": 1,
+      "tsumeMovesMax": 1,
+      "placements": [
+        "booksPage",
+        "tsumeTab"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839933324.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4861370329",
+      "kind": "book",
+      "category": "tsumeshogi",
+      "title": "3手詰ハンドブック 新版",
+      "author": "浦野真彦",
+      "publisher": "マイナビ",
+      "amazonAsin": "4861370329",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/11377650/?variantId=11377650",
+      "tsumeMovesMin": 3,
+      "tsumeMovesMax": 3,
+      "placements": [
+        "booksPage",
+        "tsumeTab"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4861370329.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839933006",
+      "kind": "book",
+      "category": "strategy",
+      "title": "鈴木大介の将棋 相振り飛車編",
+      "author": "鈴木大介",
+      "publisher": "マイナビ",
+      "amazonAsin": "4839933006",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rk/41858d0a0cbe37209bf0e2331db1da00/?variantId=41858d0a0cbe37209bf0e2331db1da00",
+      "relatedStrategies": [
+        "aifuribisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839933006.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839965153",
+      "kind": "book",
+      "category": "strategy",
+      "title": "相掛かりの新常識",
+      "author": "中座真",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839965153",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/15295035/?variantId=15295035",
+      "relatedStrategies": [
+        "aigakari"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839965153.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839957274",
+      "kind": "book",
+      "category": "strategy",
+      "title": "早分かり角換わり定跡ガイド",
+      "author": "所司和晴",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839957274",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/13397864/?variantId=13397864",
+      "relatedStrategies": [
+        "kakugawari"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839957274.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839956685",
+      "kind": "book",
+      "category": "strategy",
+      "title": "山崎隆之の一手損角換わり",
+      "author": "山崎隆之",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839956685",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/13343086/?variantId=13343086",
+      "relatedStrategies": [
+        "ittezonKakugawari"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839956685.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-481970365X",
+      "kind": "book",
+      "category": "strategy",
+      "title": "横歩取り〔ゴテ〕8五飛戦法",
+      "author": "中座真",
+      "publisher": "マイナビ出版(パワーアップシリーズ)",
+      "amazonAsin": "481970365X",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/9832357/?variantId=9832357",
+      "relatedStrategies": [
+        "yokofudori",
+        "hachigobi"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/481970365X.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839968802",
+      "kind": "book",
+      "category": "strategy",
+      "title": "矢倉の新常識",
+      "author": "真田圭一",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839968802",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/15793962/?variantId=15793962",
+      "relatedStrategies": [
+        "yagura"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839968802.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839982635",
+      "kind": "book",
+      "category": "strategy",
+      "title": "1手ずつ解説する雁木",
+      "author": "井田明宏",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839982635",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/17393457/?variantId=17393457",
+      "relatedStrategies": [
+        "gangi"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839982635.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839966966",
+      "kind": "book",
+      "category": "strategy",
+      "title": "奇襲の王様 筋違い角のすべて",
+      "author": "武市三郎・美馬和夫",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839966966",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/15618415/?variantId=15618415",
+      "relatedStrategies": [
+        "sujichigaikaku"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839966966.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839966508",
+      "kind": "book",
+      "category": "strategy",
+      "title": "緩急自在の新戦法! 三間飛車藤井システム",
+      "author": "佐藤和俊",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839966508",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/15576824/?variantId=15576824",
+      "relatedStrategies": [
+        "sankenbisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839966508.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4309731333",
+      "kind": "book",
+      "category": "strategy",
+      "title": "ごきげん中飛車を指しこなす本",
+      "author": "近藤正和",
+      "publisher": "河出書房新社(最強将棋塾)",
+      "amazonAsin": "4309731333",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/1468321/?variantId=1468321",
+      "relatedStrategies": [
+        "nakabisha",
+        "gokigenNakabisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4309731333.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839981272",
+      "kind": "book",
+      "category": "strategy",
+      "title": "1手ずつ解説する向かい飛車",
+      "author": "大石直嗣",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839981272",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/17238878/?variantId=17238878",
+      "relatedStrategies": [
+        "mukaibisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839981272.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839985030",
+      "kind": "book",
+      "category": "strategy",
+      "title": "４手目の革新! 菜々河流向かい飛車",
+      "author": "黒田尭之・菜々河れい",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839985030",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/18093800/?variantId=18093800",
+      "relatedStrategies": [
+        "nanakawaMukaibisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839985030.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839978069",
+      "kind": "book",
+      "category": "strategy",
+      "title": "実戦で学ぶ 振り飛車の勝ち方",
+      "author": "西山朋佳",
+      "publisher": "マイナビ出版(マイナビ将棋BOOKS)",
+      "amazonAsin": "4839978069",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/17140566/?variantId=17140566",
+      "relatedStrategies": [
+        "sankenbisha"
+      ],
+      "placements": [
+        "booksPage",
+        "strategy"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839978069.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4047102768",
+      "kind": "book",
+      "category": "playerBook",
+      "title": "大局観 自分と闘って負けない心",
+      "author": "羽生善治",
+      "publisher": "角川新書",
+      "amazonAsin": "4047102768",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/6991223/?variantId=6991223",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4047102768.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4167905833",
+      "kind": "book",
+      "category": "playerBook",
+      "title": "羽生善治 闘う頭脳",
+      "author": "羽生善治",
+      "publisher": "文春文庫",
+      "amazonAsin": "4167905833",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rk/c9687d958e3037808fd8f9e0b40fdc9a/?variantId=c9687d958e3037808fd8f9e0b40fdc9a",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4167905833.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "book-4839983887",
+      "kind": "book",
+      "category": "playerBook",
+      "title": "里見香奈 vs 西山朋佳 実戦集",
+      "author": "将棋書籍編集部",
+      "publisher": "マイナビ出版",
+      "amazonAsin": "4839983887",
+      "rakutenItemUrl": "https://books.rakuten.co.jp/rb/17771396/?variantId=17771396",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4839983887.09.LZZZZZZZ.jpg"
+    }
+  ],
+  "features": []
+}
