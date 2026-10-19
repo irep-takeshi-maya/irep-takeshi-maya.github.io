@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T00:00:00+09:00",
+  "updatedAt": "2026-10-20T12:00:00+09:00",
   "items": [
     {
       "id": "book-4839935521",
@@ -394,6 +394,153 @@
         "booksPage"
       ],
       "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/4262101584.09.LZZZZZZZ.jpg"
+    },
+    {
+      "id": "goods-syogoya-kaya014set",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "日向産本榧2寸4分 卓上将棋盤セット(黄楊錦旗彫駒・駒台付)",
+      "brand": "将碁屋",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/syogoya/syogiban-takujyo-kaya014set/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/syogoya/cabinet/syogiban-kaya/ms32set.jpg?fitin=275:275",
+      "blurb": "本榧の盤と黄楊の彫駒で、本格的な一式"
+    },
+    {
+      "id": "goods-syogoya-s6a-hontuget",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "新かや6寸 足付将棋盤セット(薩摩本黄楊 特上彫駒・水無瀬書)",
+      "brand": "将碁屋",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/syogoya/syogiset-s6a-hontuget/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/syogoya/cabinet/syogibansetasituki/syogiban-s6set-htuge.jpg?fitin=275:275",
+      "blurb": "タイトル戦のような足付盤で並べる"
+    },
+    {
+      "id": "goods-syogoya-kaya8",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "日向産本榧2寸1分 卓上将棋盤",
+      "brand": "将碁屋",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/syogoya/syogiban-takujyo-kaya8/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/syogoya/cabinet/syogiban-kaya/ms38-1.jpg?fitin=275:275"
+    },
+    {
+      "id": "goods-igolabo-10010126",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "日本産本榧 二寸卓上接合将棋盤",
+      "brand": "囲碁将棋の専門店 囲碁ラボ",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/igolabo/10010126/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/igolabo/cabinet/01953874/09782283/imgrc0123404766.gif?fitin=275:275"
+    },
+    {
+      "id": "goods-igolabo-10010281",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "ヒバ2寸足付将棋盤+天童 白椿上彫駒+駒台セット",
+      "brand": "囲碁将棋の専門店 囲碁ラボ",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/igolabo/10010281/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/igolabo/cabinet/06748197/07183848/imgrc0097354807.jpg?fitin=275:275"
+    },
+    {
+      "id": "furusato-tendo-02a8002",
+      "kind": "other",
+      "category": "goods",
+      "title": "【ふるさと納税】天童の将棋駒(押駒・菱湖書)",
+      "brand": "山形県天童市",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/f062103-tendo/02a8002/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/f062103-tendo/cabinet/banner/015/22-003-01r.jpg?fitin=275:275",
+      "blurb": "将棋駒の街・天童の駒をふるさと納税で"
+    },
+    {
+      "id": "furusato-tendo-02d8002",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "【ふるさと納税】天童の将棋駒と将棋盤のセット(押駒・折盤)",
+      "brand": "山形県天童市",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/f062103-tendo/02d8002/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/f062103-tendo/cabinet/banner/015/06d8002-01r.jpg?fitin=275:275"
+    },
+    {
+      "id": "furusato-tendo-22-009",
+      "kind": "other",
+      "category": "goods",
+      "title": "【ふるさと納税】天童の彫駒(薩摩本黄楊・菱湖書・千季作)",
+      "brand": "山形県天童市",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/f062103-tendo/22-009/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/f062103-tendo/cabinet/banner/015/07-22-009-01r.jpg?fitin=275:275"
+    },
+    {
+      "id": "furusato-tendo-q8012",
+      "kind": "other",
+      "category": "goods",
+      "title": "【ふるさと納税】天童の彫駒(御蔵島本黄楊・書体選択可・稚山作)",
+      "brand": "山形県天童市",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/f062103-tendo/q8012/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/f062103-tendo/cabinet/banner/027/p8012-s.jpg?fitin=275:275"
+    },
+    {
+      "id": "furusato-tendo-r8002",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "【ふるさと納税】天童の銘彫駒と卓上将棋盤のセット(越山作)",
+      "brand": "山形県天童市",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/f062103-tendo/r8002/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/f062103-tendo/cabinet/banner/015/22-014-01rrv.jpg?fitin=275:275"
+    },
+    {
+      "id": "furusato-oita-u01004",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "【ふるさと納税】本榧 卓上将棋盤(駒台付)",
+      "brand": "大分県大分市",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/f442011-oita/u01004/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/f442011-oita/cabinet/thum/u01004_s.jpg?fitin=275:275"
+    },
+    {
+      "id": "furusato-hyuga-452061124",
+      "kind": "boardSet",
+      "category": "goods",
+      "title": "【ふるさと納税】九州山地産 本榧 1寸5分 一枚盤 卓上将棋盤",
+      "brand": "宮崎県日向市",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/f452068-hyuga/452061124/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/f452068-hyuga/cabinet/2024/452061124.jpg?fitin=275:275"
     }
   ],
   "features": [
@@ -409,6 +556,22 @@
       "startAt": "2026-10-20T00:00:00+09:00",
       "endAt": "2026-12-31T23:59:59+09:00",
       "priority": 5
+    },
+    {
+      "id": "feature-furusato-2026",
+      "title": "ふるさと納税で将棋盤・駒を",
+      "subtitle": "将棋駒の街・天童や、本榧の産地・日向の返礼品。2026年分のふるさと納税は12月31日まで",
+      "itemIds": [
+        "furusato-tendo-02a8002",
+        "furusato-tendo-02d8002",
+        "furusato-tendo-22-009",
+        "furusato-tendo-r8002",
+        "furusato-hyuga-452061124",
+        "furusato-oita-u01004"
+      ],
+      "startAt": "2026-10-20T00:00:00+09:00",
+      "endAt": "2026-12-31T23:59:59+09:00",
+      "priority": 3
     }
   ]
 }
