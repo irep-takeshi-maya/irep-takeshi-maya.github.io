@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>将棋Vault 局面ビューア</title>
+<meta name="description" content="将棋Vaultで共有された局面を、アプリなしで表示します。">
+<meta name="robots" content="noindex">
+<!--
+  将棋Vault アプリの「局面を共有」から開く静的ビューア(shogi-vault Issue #388)。
+  局面は URL の # 以降(フラグメント)に入れるため、サーバーには送られない。
+    #sfen=<SFEN>&best=<USI の指し手>&eval=<先手視点の評価値>&mate=<先手視点の詰み手数>
+  サーバー側の処理・外部への送信・Cookie はない。
+-->
+<style>
+  :root {
+    --bg: #fff8f0; --fg: #3e2723; --sub: #6d4c41; --board: #f3d9a4;
+    --line: #8d6e63; --mark: rgba(211, 47, 47, .28); --card: #ffffff;
+    --accent: #8d6e63;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1f1a17; --fg: #f5ebe0; --sub: #c8b7a6; --card: #2b2420; --accent: #d7b49e; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "BIZ UDPGothic", sans-serif;
+  }
+  main { max-width: 480px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 18px; margin: 0 0 4px; }
+  .sub { color: var(--sub); font-size: 13px; margin: 0 0 12px; }
+  .hand { display: flex; gap: 6px; flex-wrap: wrap; min-height: 28px; align-items: center;
+          font-size: 15px; color: var(--fg); }
+  .hand .who { color: var(--sub); font-size: 13px; }
+  .board { display: grid; grid-template-columns: repeat(9, 1fr); background: var(--board);
+           border: 2px solid var(--line); margin: 6px 0; aspect-ratio: 1 / 1.08; }
+  .sq { border: .5px solid var(--line); display: flex; align-items: center; justify-content: center;
+        font-size: clamp(14px, 5.2vw, 24px); color: #2b1d14; user-select: none; }
+  .sq.w span { transform: rotate(180deg); display: inline-block; }
+  .sq.promoted { color: #b71c1c; }
+  .sq.mark { background: var(--mark); }
+  .info { background: var(--card); border-radius: 10px; padding: 12px 14px; margin-top: 12px; }
+  .info dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; }
+  .info dt { color: var(--sub); font-size: 13px; }
+  .info dd { margin: 0; font-weight: bold; }
+  .cta { margin-top: 16px; text-align: center; }
+  .cta p { font-size: 14px; margin: 0 0 8px; }
+  .cta a { display: inline-block; margin: 4px; padding: 10px 16px; border-radius: 8px;
+           background: var(--accent); color: #fff; text-decoration: none; font-size: 14px; }
+  .error { color: #c62828; }
+</style>
+</head>
+<body>
+<main>
+  <h1>将棋Vault で共有された局面</h1>
+  <p class="sub" id="turn"></p>
+  <div class="hand" id="hand-w"></div>
+  <div class="board" id="board" role="img" aria-label="将棋盤"></div>
+  <div class="hand" id="hand-b"></div>
+  <div class="info" id="info" hidden><dl id="info-list"></dl></div>
+  <p class="error" id="error" hidden>局面を読み取れませんでした。リンクが途中で切れていないか確認してください。</p>
+  <div class="cta">
+    <p>この局面の続きを、AI と一緒に研究できます。</p>
+    <a href="https://apps.apple.com/jp/app/id6799314216">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.shogivault.shogivault">Google Play</a>
+  </div>
+</main>
+<script>
+(() => {
+  const KANJI = { K: '玉', R: '飛', B: '角', G: '金', S: '銀', N: '桂', L: '香', P: '歩' };
+  const PROMOTED = { R: '龍', B: '馬', S: '全', N: '圭', L: '杏', P: 'と' };
+  const HAND_ORDER = ['R', 'B', 'G', 'S', 'N', 'L', 'P'];
+  const FILE_ZEN = ['', '１', '２', '３', '４', '５', '６', '７', '８', '９'];
+  const RANK_KAN = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  const NUM_KAN = ['', '', '二', '三', '四', '五', '六', '七', '八', '九', '十',
+                   '十一', '十二', '十三', '十四', '十五', '十六', '十七', '十八'];
+
+  const params = new URLSearchParams(location.hash.replace(/^#/, ''));
+  const sfen = params.get('sfen');
+
+  // SFEN を盤(board[rank][file]、rank/file は 1 始まり)と持ち駒に分解する。
+  function parse(text) {
+    const [placement, turn, hands] = text.trim().split(/\s+/);
+    const rows = placement.split('/');
+    if (rows.length !== 9) throw new Error('rank');
+    const board = {};
+    rows.forEach((row, r) => {
+      let file = 9;
+      for (let i = 0; i < row.length; i++) {
+        const c = row[i];
+        if (/\d/.test(c)) { file -= Number(c); continue; }
+        let promoted = false, ch = c;
+        if (c === '+') { promoted = true; ch = row[++i]; }
+        if (!ch || !KANJI[ch.toUpperCase()]) throw new Error('piece');
+        board[`${file},${r + 1}`] = {
+          type: ch.toUpperCase(), black: ch === ch.toUpperCase(), promoted,
+        };
+        file--;
+      }
+      if (file !== 0) throw new Error('width');
+    });
+    const hand = { b: {}, w: {} };
+    if (hands && hands !== '-') {
+      const re = /(\d*)([RBGSNLPrbgsnlp])/g;
+      let m;
+      while ((m = re.exec(hands))) {
+        const side = m[2] === m[2].toUpperCase() ? 'b' : 'w';
+        hand[side][m[2].toUpperCase()] = Number(m[1] || 1);
+      }
+    }
+    return { board, turn: turn === 'w' ? 'w' : 'b', hand };
+  }
+
+  function label(p) {
+    if (p.promoted) return PROMOTED[p.type];
+    if (p.type === 'K') return p.black ? '玉' : '王';
+    return KANJI[p.type];
+  }
+
+  // USI の指し手(7g7f / P*5e / 8h2b+)を、盤上の位置と日本語表記にする。
+  function move(usi, pos) {
+    const sq = (s) => [Number(s[0]), s.charCodeAt(1) - 96];
+    const mark = pos.turn === 'b' ? '▲' : '△';
+    if (/^[RBGSNLP]\*[1-9][a-i]$/.test(usi)) {
+      const [f, r] = sq(usi.slice(2));
+      return { to: [f, r], text: `${mark}${FILE_ZEN[f]}${RANK_KAN[r]}${KANJI[usi[0]]}打` };
+    }
+    if (!/^[1-9][a-i][1-9][a-i]\+?$/.test(usi)) return null;
+    const from = sq(usi.slice(0, 2)), to = sq(usi.slice(2, 4));
+    const piece = pos.board[`${from[0]},${from[1]}`];
+    if (!piece) return null;
+    const promote = usi.endsWith('+') ? '成' : '';
+    return { from, to, text: `${mark}${FILE_ZEN[to[0]]}${RANK_KAN[to[1]]}${label(piece)}${promote}` };
+  }
+
+  function renderHand(el, who, hand) {
+    el.innerHTML = `<span class="who">${who}</span>`;
+    const parts = HAND_ORDER.filter((t) => hand[t]).map(
+      (t) => `<span>${KANJI[t]}${hand[t] > 1 ? NUM_KAN[hand[t]] : ''}</span>`);
+    el.innerHTML += parts.length ? parts.join('') : '<span class="who">なし</span>';
+  }
+
+  try {
+    if (!sfen) throw new Error('empty');
+    const pos = parse(sfen);
+    const best = params.get('best') ? move(params.get('best'), pos) : null;
+    const marked = new Set();
+    if (best) {
+      if (best.from) marked.add(best.from.join(','));
+      marked.add(best.to.join(','));
+    }
+
+    const boardEl = document.getElementById('board');
+    for (let r = 1; r <= 9; r++) {
+      for (let f = 9; f >= 1; f--) {
+        const cell = document.createElement('div');
+        const p = pos.board[`${f},${r}`];
+        cell.className = 'sq' + (p && !p.black ? ' w' : '') + (p && p.promoted ? ' promoted' : '') +
+          (marked.has(`${f},${r}`) ? ' mark' : '');
+        if (p) cell.innerHTML = `<span>${label(p)}</span>`;
+        boardEl.appendChild(cell);
+      }
+    }
+    renderHand(document.getElementById('hand-w'), '△後手の持ち駒', pos.hand.w);
+    renderHand(document.getElementById('hand-b'), '▲先手の持ち駒', pos.hand.b);
+    document.getElementById('turn').textContent = pos.turn === 'b' ? '▲先手番' : '△後手番';
+
+    const rows = [];
+    const mate = params.get('mate'), ev = params.get('eval');
+    if (mate && /^-?\d+$/.test(mate)) {
+      const n = Number(mate);
+      rows.push(['評価値(先手視点)', n > 0 ? `+詰 ${n}手` : `-詰 ${-n}手`]);
+    } else if (ev && /^-?\d+$/.test(ev)) {
+      const n = Number(ev);
+      rows.push(['評価値(先手視点)', n > 0 ? `+${n}` : `${n}`]);
+    }
+    if (best) rows.push(['AIの最善手', best.text]);
+    if (rows.length) {
+      const list = document.getElementById('info-list');
+      for (const [k, v] of rows) {
+        const dt = document.createElement('dt'); dt.textContent = k;
+        const dd = document.createElement('dd'); dd.textContent = v;
+        list.append(dt, dd);
+      }
+      document.getElementById('info').hidden = false;
+    }
+  } catch (e) {
+    document.getElementById('error').hidden = false;
+  }
+})();
+</script>
+</body>
+</html>
