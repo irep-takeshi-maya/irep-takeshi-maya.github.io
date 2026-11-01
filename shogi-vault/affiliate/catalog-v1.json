@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T12:00:00+09:00",
+  "updatedAt": "2026-11-01T18:00:00+09:00",
   "items": [
     {
       "id": "book-4839935521",
@@ -541,6 +541,58 @@
         "booksPage"
       ],
       "imageUrl": "https://tshop.r10s.jp/f452068-hyuga/cabinet/2024/452061124.jpg?fitin=275:275"
+    },
+    {
+      "id": "goods-seiko-bz361l",
+      "kind": "clock",
+      "category": "goods",
+      "title": "セイコー 対局時計 BZ361L(アナログ式)",
+      "brand": "セイコー",
+      "amazonAsin": "B085C7P61B",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/syogoya/taikyokutokei-seiko/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/syogoya/cabinet/sonota-kyotu/taikyokutokei-seiko1.jpg?fitin=275:275",
+      "blurb": "日本将棋連盟推薦の対局時計"
+    },
+    {
+      "id": "goods-hanayama-magnetic-king-shogi",
+      "kind": "magneticBoard",
+      "category": "goods",
+      "title": "マグネチック キング将棋",
+      "brand": "ハナヤマ",
+      "amazonAsin": "B01HAWBVBW",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://m.media-amazon.com/images/I/61Q6M6rlZKL._AC_SX300_.jpg",
+      "blurb": "磁石の駒で、外出先や子どもとの対局に"
+    },
+    {
+      "id": "goods-syogoya-ms23",
+      "kind": "magneticBoard",
+      "category": "goods",
+      "title": "マグネット将棋盤セット MS23(盤 横24cm×縦26cm)",
+      "brand": "将碁屋",
+      "rakutenItemUrl": "https://item.rakuten.co.jp/syogoya/ms23/",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://tshop.r10s.jp/syogoya/cabinet/magnet/msset-ms23.jpg?fitin=275:275"
+    },
+    {
+      "id": "goods-elecom-tb-dschalsv",
+      "kind": "stand",
+      "category": "goods",
+      "title": "タブレット用アルミスタンド フリーアングル TB-DSCHALSV(5〜12.9インチ対応)",
+      "brand": "エレコム",
+      "amazonAsin": "B08JGT3YRM",
+      "placements": [
+        "booksPage"
+      ],
+      "imageUrl": "https://m.media-amazon.com/images/I/61470LzpROS._AC_SX300_.jpg",
+      "blurb": "盤の横にアプリを立てて、並べながら確かめる"
     }
   ],
   "features": [
